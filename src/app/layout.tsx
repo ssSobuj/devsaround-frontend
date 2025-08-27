@@ -24,8 +24,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const googleClientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || "";
-
   return (
     <html lang="en">
       <body

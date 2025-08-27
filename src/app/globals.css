@@ -1,5 +1,3 @@
-/* src/app/globals.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,28 +8,20 @@
     --primary: #b9ff66;
     --secondary: #191a23;
     --accent: #f3f3f3;
-
     --radius: 0.625rem;
   }
 
-  .dark {
-  }
-}
-
-@layer base {
-  * {
-    /* If you keep --border, then border-color: hsl(var(--border)) is fine.
-       If you remove --border, you might want to set a default border color here
-       or remove this rule if not needed globally. */
-    /* border-color: hsl(var(--border)); */
-  }
+  /* Light mode defaults */
   body {
-    /* If you're removing --background and --foreground,
-       you'll need to set these directly or using different custom properties.
-       For simplicity, if you only need primary/secondary/accent, you might not
-       need these global body styles or you can set them with your new colors. */
-    /* @apply bg-background text-foreground; */
-    /* Example using your new colors: */
-    /* @apply bg-secondary text-accent; */
+    @apply bg-accent text-secondary;
+  }
+
+  /* Dark mode overrides */
+  .dark {
+    --primary: #b9ff66;
+    --secondary: #f3f3f3;
+    --accent: #191a23;
+
+    @apply bg-secondary text-accent;
   }
 }

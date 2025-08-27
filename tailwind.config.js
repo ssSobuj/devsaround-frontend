@@ -23,13 +23,13 @@ module.exports = {
         accent: "var(--accent)",
       },
       borderRadius: {
-        lg: "var(--radius)", // Keep if you still use --radius
+        lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)"], // Assuming you're using Geist fonts
-        mono: ["var(--font-geist-mono)"], // Assuming you're using Geist fonts
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
       },
     },
   },
