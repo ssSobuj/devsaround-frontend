@@ -1,3 +1,5 @@
+/* src/app/globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,23 +7,32 @@
 
 @layer base {
   :root {
+    /* Light Mode Colors */
     --primary: #b9ff66;
     --secondary: #191a23;
     --accent: #f3f3f3;
+
+    /* General text and background for light mode */
+    --background: #ffffff; /* White background for light mode */
+    --foreground: #191a23; /* Dark text for light mode (matching secondary) */
+
     --radius: 0.625rem;
   }
 
-  /* Light mode defaults */
-  body {
-    @apply bg-accent text-secondary;
-  }
-
-  /* Dark mode overrides */
   .dark {
-    --primary: #b9ff66;
-    --secondary: #f3f3f3;
-    --accent: #191a23;
+    /* Dark Mode Colors */
+    --primary: #8ee036; /* A slightly darker primary for dark mode, or keep #b9ff66 if you prefer */
+    --secondary: #f3f3f3; /* Light background for dark mode (swapped with accent) */
+    --accent: #191a23; /* Dark text for dark mode (swapped with secondary) */
 
-    @apply bg-secondary text-accent;
+    /* General text and background for dark mode */
+    --background: #191a23; /* Dark background for dark mode (matching secondary light mode) */
+    --foreground: #f3f3f3; /* Light text for dark mode (matching accent light mode) */
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans;
   }
 }

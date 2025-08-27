@@ -21,6 +21,9 @@ module.exports = {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         accent: "var(--accent)",
+
+        background: "var(--background)",
+        foreground: "var(--foreground)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -28,8 +31,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)"],
-        mono: ["var(--font-geist-mono)"],
+        sans: ["var(--font-sans)"],
       },
     },
   },

@@ -1,17 +1,11 @@
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-sans", // Use --font-sans for the main font
-});
-
-const jetbrains_mono = JetBrains_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-mono", // Use --font-mono for the monospace font
+  variable: "--font-sans",
 });
 
 export const metadata: any = {
@@ -26,9 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${jetbrains_mono.variable} antialiased`}
-      >
+      <body className={`${spaceGrotesk.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
