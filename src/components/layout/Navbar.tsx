@@ -18,7 +18,7 @@ const links = ["about-us", "services", "use-cases", "pricing", "blog"];
 
 export function Navbar() {
   return (
-    <header className="absolute left-0 right-0 top-0 z-10 py-[68px] bg-background">
+    <header className="left-0 right-0 top-0 z-10 py-6 py-lg-[68px] bg-background">
       <div className="container flex items-center justify-between">
         {/* Logo (left side) */}
         <Link href="#" className="flex items-center" prefetch={false}>
@@ -26,9 +26,9 @@ export function Navbar() {
         </Link>
 
         {/* Right side: nav items + button */}
-        <div className="hidden lg:flex items-center gap-10">
+        <div className="hidden lg:flex items-center gap-8">
           <NavigationMenu>
-            <NavigationMenuList className="flex items-center gap-8">
+            <NavigationMenuList className="flex items-center gap-6">
               {links.map((link) => (
                 <NavigationMenuItem key={link}>
                   <NavigationMenuLink
@@ -55,18 +55,22 @@ export function Navbar() {
         {/* Mobile Navigation */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="lg:hidden">
-              <Menu className="h-6 w-6" />
+            <Button
+              variant="outline"
+              size="icon"
+              className="lg:hidden border-0"
+            >
+              <Menu size={20} className="h-8 w-8" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="right">
-            <div className="grid gap-4 py-6">
+            <div className="grid gap-4 p-6">
               {links.map((link) => (
                 <Link
                   key={link}
                   href={`#${link}`}
-                  className="flex w-full items-center py-2 text-lg font-semibold text-foreground"
+                  className="flex w-full items-center text-lg"
                   prefetch={false}
                 >
                   {link
@@ -75,7 +79,7 @@ export function Navbar() {
                 </Link>
               ))}
 
-              <Button className="mt-4 w-full bg-primary text-secondary hover:bg-primary/90">
+              <Button variant="outline" className="w-full ">
                 Request a quote
               </Button>
             </div>

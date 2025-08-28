@@ -1,7 +1,11 @@
 import Hero from "@/components/Hero";
-import MyComponent from "@/components/MyComponent";
-import React from "react";
+import { LogoSlider } from "@/components/LogoSlider";
 
 export default function Home() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <LogoSlider />
+    </>
+  );
 }

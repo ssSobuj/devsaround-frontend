@@ -18,7 +18,7 @@ const buttonVariants = cva(
       },
       size: {
         default: "inline-flex px-[35px] py-[19px] has-[>svg]:px-3 ",
-        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+        sm: "inline-flex px-[26px] py-[14px] has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
       },
