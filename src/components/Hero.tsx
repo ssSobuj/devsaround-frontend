@@ -7,7 +7,6 @@ export function Hero() {
   return (
     <section className="w-full py-6 lg:py-12">
       <div className="container">
-        {/* Mobile Layout (stacked: title → image → desc → button) */}
         <div className="flex flex-col gap-6 md:hidden">
           <h1 className="text-4xl font-bold leading-[100%] tracking-[0] text-foreground">
             Navigating the digital landscape for success
