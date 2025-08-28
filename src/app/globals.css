@@ -14,7 +14,7 @@
 
     /* General text and background for light mode */
     --background: #ffffff; /* White background for light mode */
-    --foreground: #191a23; /* Dark text for light mode (matching secondary) */
+    --foreground: #000000; /* Dark text for light mode (matching secondary) */
 
     --radius: 0.625rem;
   }
@@ -27,12 +27,43 @@
 
     /* General text and background for dark mode */
     --background: #191a23; /* Dark background for dark mode (matching secondary light mode) */
-    --foreground: #f3f3f3; /* Light text for dark mode (matching accent light mode) */
+    --foreground: #ffffff; /* Light text for dark mode (matching accent light mode) */
   }
 }
 
 @layer base {
   body {
     @apply bg-background text-foreground font-sans;
+
+    h1 {
+      @apply text-[46px] sm:text-[46px] lg:text-[60px];
+    }
+
+    h2 {
+      @apply text-[36px] sm:text-[36px] lg:text-[40px];
+    }
+
+    h3 {
+      @apply text-[26px] sm:text-[26px] lg:text-[30px];
+    }
+
+    h4 {
+      @apply text-[18px] sm:text-[18px] lg:text-[20px];
+    }
+
+    button,
+    a {
+      @apply text-[18px] sm:text-[18px] lg:text-[20px];
+    }
+    p,
+    li,
+    span,
+    label,
+    strong,
+    div,
+    em,
+    blockquote {
+      @apply text-[16px] sm:text-[16px] lg:text-[18px];
+    }
   }
 }
