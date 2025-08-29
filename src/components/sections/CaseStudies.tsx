@@ -60,7 +60,7 @@ export default function CaseStudies() {
       <div className="mx-auto w-full lg:hidden">
         <Carousel
           setApi={setApi}
-          opts={{ loop: true }} // 👈 loop enabled here
+          opts={{ loop: true }} //
           className="w-full"
         >
           <CarouselContent className="-ml-4">

@@ -76,3 +76,13 @@
 .accordion-chevron {
   display: none;
 }
+
+/* carousel-fixes.css */
+.custom-carousel-button svg {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.custom-carousel-button:hover svg {
+  transform: scale(1.1);
+}
