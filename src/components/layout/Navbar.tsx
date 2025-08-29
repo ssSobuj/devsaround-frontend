@@ -20,12 +20,10 @@ export function Navbar() {
   return (
     <header className="left-0 right-0 top-0 z-10 py-6 py-lg-[68px] bg-background">
       <div className="container flex items-center justify-between">
-        {/* Logo (left side) */}
         <Link href="#" className="flex items-center" prefetch={false}>
-          <Logo />
+          <Logo mood="#000000" />
         </Link>
 
-        {/* Right side: nav items + button */}
         <div className="hidden lg:flex items-center gap-8">
           <NavigationMenu>
             <NavigationMenuList className="flex items-center gap-6">
@@ -52,7 +50,6 @@ export function Navbar() {
           </Button>
         </div>
 
-        {/* Mobile Navigation */}
         <Sheet>
           <SheetTrigger asChild>
             <Button

@@ -211,7 +211,7 @@ export default function Contact() {
         </div>
 
         {/* Right Illustration (only on lg+) */}
-        <div className="hidden  lg:flex  justify-center items-center  absolute right-[-320px] top-[3rem]">
+        <div className="hidden  lg:flex  justify-center items-center  absolute right-[-315px] top-[3rem]">
           <Image
             src="/images/contact.png"
             alt="CTA Illustration"
