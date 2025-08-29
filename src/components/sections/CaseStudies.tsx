@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
-import CaseStudyCard from "./CaseStudyCard";
-import SectionHeader from "./SectionHeader";
+import CaseStudyCard from "../cards/CaseStudyCard";
+import SectionHeader from "../common/SectionHeader";
 const caseStudies = [
   {
     text: "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",

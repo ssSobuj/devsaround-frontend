@@ -1,19 +1,21 @@
-import CallToActionBanner from "@/components/CallToActionBanner";
-import CaseStudies from "@/components/CaseStudies";
-import Hero from "@/components/Hero";
-import { LogoSlider } from "@/components/LogoSlider";
-import ProcessFAQ from "@/components/ProcessFAQ";
-import { ServicesSection } from "@/components/Services";
+import CallToActionBanner from "@/components/sections/CallToActionBanner";
+import CaseStudies from "@/components/sections/CaseStudies";
+import Hero from "@/components/sections/Hero";
+import LogoSlider from "@/components/sections/LogoSlider";
+import ProcessFAQ from "@/components/sections/ProcessFAQ";
+import Services from "@/components/sections/Services";
+import Team from "@/components/sections/Team";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <LogoSlider />
-      <ServicesSection />
+      <Services />
       <CallToActionBanner />
       <CaseStudies />
       <ProcessFAQ />
+      <Team />
     </>
   );
 }

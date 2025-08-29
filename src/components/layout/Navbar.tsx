@@ -12,7 +12,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import Logo from "../Logo";
+import Logo from "../common/Logo";
 
 const links = ["about-us", "services", "use-cases", "pricing", "blog"];
 

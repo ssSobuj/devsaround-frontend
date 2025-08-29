@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../common/SectionHeader";
 import { Plus, Minus } from "lucide-react";
 export default function ProcessFAQ() {
   const [activeIndex, setActiveIndex] = useState(0);

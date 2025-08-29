@@ -38,7 +38,7 @@ function LogoRow({ reverse = false }: { reverse?: boolean }) {
   );
 }
 
-export function LogoSlider() {
+export default function LogoSlider() {
   return (
     <section className="w-full overflow-hidden bg-background py-6">
       <div className="container flex flex-col gap-6 md:flex-row md:gap-12">

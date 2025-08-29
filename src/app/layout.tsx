@@ -1,9 +1,9 @@
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
-import ThemeToggle from "@/components/ThemeToggle";
+import ThemeToggle from "@/components/common/ThemeToggle";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],

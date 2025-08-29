@@ -1,5 +1,5 @@
-import SectionHeader from "./SectionHeader";
-import ServiceCard from "./ServiceCard";
+import SectionHeader from "../common/SectionHeader";
+import ServiceCard from "../cards/ServiceCard";
 const services = [
   {
     variant: "accent",
@@ -45,7 +45,7 @@ const services = [
   },
 ];
 
-export function ServicesSection() {
+export default function Services() {
   return (
     <section className="container py-16 md:py-24">
       <SectionHeader
