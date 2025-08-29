@@ -1,5 +1,6 @@
 import CallToActionBanner from "@/components/sections/CallToActionBanner";
 import CaseStudies from "@/components/sections/CaseStudies";
+import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
 import LogoSlider from "@/components/sections/LogoSlider";
 import ProcessFAQ from "@/components/sections/ProcessFAQ";
@@ -18,6 +19,7 @@ export default function Home() {
       <ProcessFAQ />
       <Team />
       <Testimonials />
+      <Contact />
     </>
   );
 }

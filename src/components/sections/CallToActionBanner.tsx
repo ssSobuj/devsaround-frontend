@@ -14,7 +14,9 @@ export default function CallToActionBanner() {
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
-          <Button variant="secondary">Get your free proposal</Button>
+          <Button variant="secondary" className="w-full md:w-auto">
+            Get your free proposal
+          </Button>
         </div>
 
         {/* Right Illustration (only on lg+) */}
