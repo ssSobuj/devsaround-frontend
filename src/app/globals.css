@@ -67,3 +67,12 @@
     }
   }
 }
+
+/* Hide the default accordion icon */
+[data-state="open"] > .accordion-trigger > .accordion-chevron {
+  display: none;
+}
+
+.accordion-chevron {
+  display: none;
+}
