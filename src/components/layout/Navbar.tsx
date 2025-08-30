@@ -19,14 +19,14 @@ const links = ["about-us", "services", "use-cases", "pricing", "blog"];
 export function Navbar() {
   return (
     <header className="left-0 right-0 top-0 z-10 py-6 py-lg-[68px] bg-background">
-      <div className="container flex items-center justify-between">
+      <div className="container  flex items-center justify-between">
         <Link href="#" className="flex items-center" prefetch={false}>
           <Logo mood="#000000" />
         </Link>
 
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-4 xl:gap-8">
           <NavigationMenu>
-            <NavigationMenuList className="flex items-center gap-6">
+            <NavigationMenuList className="flex items-center  gap-2 xl:gap-6">
               {links.map((link) => (
                 <NavigationMenuItem key={link}>
                   <NavigationMenuLink
@@ -44,7 +44,6 @@ export function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Desktop Action Button with same gap as items */}
           <Button variant="outline" className="w-auto ">
             Request a quote
           </Button>

@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Link from "next/link"; // Keep Link if used for internal anchors within hero section
+import Link from "next/link";
 
-export function Hero() {
+export default function Hero() {
   return (
     <section className="w-full py-6 lg:py-12">
       <div className="container">
@@ -31,7 +31,6 @@ export function Hero() {
           </Button>
         </div>
 
-        {/* Desktop Layout (two columns: text left, image right) */}
         <div className="hidden md:grid md:grid-cols-2 md:items-center md:gap-16">
           <div className="flex flex-col gap-8">
             <h1 className="text-5xl font-bold leading-[100%] tracking-[0] text-foreground">
@@ -60,5 +59,3 @@ export function Hero() {
     </section>
   );
 }
-
-export default Hero;

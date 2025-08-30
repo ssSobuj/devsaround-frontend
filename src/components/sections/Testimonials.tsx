@@ -6,8 +6,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext, // Import CarouselNext
-  CarouselPrevious, // Import CarouselPrevious
+  CarouselNext,
+  CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
 
@@ -72,7 +72,6 @@ export default function Testimonials() {
       />
 
       <div className="bg-secondary py-[28px] md:py-[76px] rounded-[45px] w-full relative">
-        {/* Added relative for positioning arrows */}
         <div className="mx-auto w-full ">
           <Carousel setApi={setApi} opts={{ loop: true }} className="w-full">
             <CarouselContent className="flex">
@@ -120,7 +119,6 @@ export default function Testimonials() {
               <CarouselPrevious className="custom-carousel-button relative static border-none bg-transparent shadow-none hover:bg-transparent p-0 w-auto text-background items-start">
                 <ArrowLeft />
               </CarouselPrevious>
-              {/* Pagination dots */}
               <div className="flex justify-center gap-2 mb-5">
                 {Array.from({ length: count }).map((_, idx) => (
                   <span key={idx} className="h-[14px] w-[14px]">
@@ -146,26 +144,6 @@ export default function Testimonials() {
             </div>
           </Carousel>
         </div>
-        {/* <div className="text-background py-2 text-center mt-[124px]">
-          <div className="flex justify-center gap-2 mt-4">
-            {Array.from({ length: count }).map((_, idx) => (
-              <span key={idx} className={`h-[14px] w-[14px] `}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                >
-                  <path
-                    d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z"
-                    fill={` ${current === idx + 1 ? "#B9FF66" : "#ffffff"}`}
-                  />
-                </svg>
-              </span>
-            ))}
-          </div>
-        </div> */}
       </div>
     </section>
   );

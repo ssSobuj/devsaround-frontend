@@ -13,14 +13,18 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: "1rem", // mobile (16px)
-        sm: "2rem", // ≥640px
-        md: "3rem", // ≥768px
-        lg: "8rem", // ≥1024px
+        sm: "36px", // ≥640px
+        md: "50px", // ≥768px
+        lg: "70px", // ≥1024px
         xl: "80px", // ≥1280px
         "2xl": "100px", // ≥1536px
       },
       screens: {
-        "2xl": "1400px",
+        sm: "640px", // Example max-width for sm
+        md: "768px", // Example max-width for md
+        lg: "1024px", // Example max-width for lg
+        xl: "1280px", // Example max-width for xl
+        "2xl": "1400px", // Your custom 2xl max-width
       },
     },
     extend: {

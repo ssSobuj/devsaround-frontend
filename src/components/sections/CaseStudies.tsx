@@ -30,7 +30,6 @@ export default function CaseStudies() {
   useEffect(() => {
     if (!api) return;
 
-    // Auto-scroll every 0.5s
     const interval = setInterval(() => {
       api.scrollNext();
     }, 2000);
@@ -49,7 +48,6 @@ export default function CaseStudies() {
         {caseStudies.map((study, index) => (
           <React.Fragment key={index}>
             <CaseStudyCard text={study.text} buttonText={study.buttonText} />
-            {/* Divider except after last card */}
             {index < caseStudies.length - 1 && (
               <div className="w-[1px] bg-background self-stretch"></div>
             )}
@@ -58,11 +56,7 @@ export default function CaseStudies() {
       </div>
 
       <div className="mx-auto w-full lg:hidden">
-        <Carousel
-          setApi={setApi}
-          opts={{ loop: true }} //
-          className="w-full"
-        >
+        <Carousel setApi={setApi} opts={{ loop: true }} className="w-full">
           <CarouselContent className="-ml-4">
             {caseStudies.map((study, index) => (
               <CarouselItem
