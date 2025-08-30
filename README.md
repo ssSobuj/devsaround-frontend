@@ -13,9 +13,12 @@ Frontend Developer Test Project for DevsAround built with **Next.js 14**, **Tail
 
 ## 📦 Installation
 
+First, clone the repository:
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/devsaround-frontend.git
+git clone https://github.com/ssSobuj/devsaround-frontend
 cd devsaround-frontend
-npm install
-npm run dev
+
+npm install || yarn install
+npm run dev || yarn dev
 ```
